@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - Mapping
 - Discussion
 
-<img src = "2018.jpg" title = "My photo"/>
+<img src = "2018.jpg" title = "Volcano, HI"/>
 
 ```{r graphics, fig.align = 'center', echo = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
