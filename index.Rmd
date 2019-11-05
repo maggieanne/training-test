@@ -1,54 +1,17 @@
 ---
-title: "Tweedie practice"
+title: "index"
 author: "Maggie Christman"
-date: "11/4/2019"
+date: "11/5/2019"
 output: html_document
-
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Introduction
+# Outline of the manuscript work
 
-This data set contains North Pole Environmental Observatory Bottle Chemistry data. This data set includes diverse measurements of seawater chemistry along with supporting conductivity, temperature, and depth (CTD) data from the Arctic Ocean near the North Pole. Measurements were taken from sea ice platforms each April or May from 2000-2014.
-
-The data can be downloaded [here](http://doi.org/10.18739/A25T3FZ8X). 
-
-# Simple analysis
-
-Use 'read.csv' to read in the data
-
-```{r}
-bg_chem <- read.csv("BGchem2008data.csv",
-                    stringsAsFactors = F)
-
-head(bg_chem)
-```
-
-
-
-Describe analysis choices ...
-
-```{r}
-# The mean depth of all observations is stored as mean_depth.
-mean_depth <- mean(bg_chem$CTD_Depth)
-
-# The minimum temperature of all observations is stored as min_temp.
-min_temp <- min(bg_chem$CTD_Temperature)
-
-```
-
-# Results
-
-The mean depth of **all** observations is `r round(mean_depth, digits = 2)` meters.
-
-The relationship between depth and nitrate concentration was plotted.
-
-The coldest temperature observed was `r round(min(bg_chem$CTD_Temperature), digits = 1)` degrees C.
-
-```{r}
-plot(bg_chem$CTD_Depth, bg_chem$NO3)
-
-```
+- Data cleaning
+- [Analysis](tweedie-practice.html)
+- Mapping
+- Discussion

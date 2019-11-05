@@ -3,8 +3,6 @@ title: "Tweedie practice"
 author: "Maggie Christman"
 date: "11/4/2019"
 output: html_document
-runtime: shiny
-
 ---
 
 ```{r setup, include=FALSE}
@@ -54,11 +52,3 @@ plot(bg_chem$CTD_Depth, bg_chem$NO3)
 
 ```
 
-
-```{r, echo = FALSE}
-numericInput("n",
- "How many stations to display?", 3)
-renderTable({
- head(bg_chem, input$n)
-})
-```
