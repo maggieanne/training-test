@@ -36,7 +36,11 @@ vignettes/*.pdf
 rsconnect/
 
 # data folder
+<<<<<<< HEAD
 # data/
 
 # ignore .png files
 # *.png
+=======
+data/
+>>>>>>> c4a8dade9d35913c0fcb808ddae6a6bde96cc639
